@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" id="QAb-AS-A9n">
+                                <rect key="frame" x="0.0" y="0.0" width="785" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="center" minimumFontSize="19" background="textField2-lastName.png" clearButtonMode="whileEditing" id="We0-wj-MWf" userLabel="lastNameField">
+                                <rect key="frame" x="376" y="275" width="300" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="textFieldAction:" destination="BYZ-38-t0r" eventType="editingChanged" id="31l-4h-nUh"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="efF-F7-3Oo"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="center" minimumFontSize="19" background="textField4-password.png" clearButtonMode="whileEditing" id="fqd-ok-FYJ" userLabel="passwordField">
+                                <rect key="frame" x="376" y="435" width="300" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="next" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                <connections>
+                                    <action selector="textFieldAction:" destination="BYZ-38-t0r" eventType="editingChanged" id="MPN-WY-p19"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="6Oc-Vz-B4s"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="age" textAlignment="center" minimumFontSize="19" background="textField5-age.png" clearButtonMode="whileEditing" id="aJ6-ih-Mx0" userLabel="ageField">
+                                <rect key="frame" x="376" y="515" width="300" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" keyboardAppearance="alert" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="textFieldAction:" destination="BYZ-38-t0r" eventType="editingChanged" id="ORO-Dd-mcm"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Kls-7D-RyU"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="tel" textAlignment="center" minimumFontSize="19" background="textField6-tel.png" clearButtonMode="whileEditing" id="GWf-83-1e3" userLabel="telField">
+                                <rect key="frame" x="376" y="595" width="300" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" keyboardAppearance="alert" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="textFieldAction:" destination="BYZ-38-t0r" eventType="editingChanged" id="0XW-zv-3LJ"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="dDT-Ig-fs5"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="center" minimumFontSize="19" background="textField7-email.png" clearButtonMode="whileEditing" id="KE3-OE-j7h" userLabel="emailField">
+                                <rect key="frame" x="376" y="675" width="300" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="textFieldAction:" destination="BYZ-38-t0r" eventType="editingChanged" id="S94-lf-CPS"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="sNo-TW-vhd"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="H6R-Wd-ppx" userLabel="nameLabel">
+                                <rect key="frame" x="99" y="195" width="250" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.72835386020000004" blue="0.65860718620000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="0.72835386020000004" blue="0.65860718620000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="61K-5Q-FZs" userLabel="lastNameLabel">
+                                <rect key="frame" x="99" y="275" width="250" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.72835386020000004" blue="0.65860718620000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8II-Gi-Jwx" userLabel="loginLabel">
+                                <rect key="frame" x="99" y="355" width="250" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.72835386020000004" blue="0.65860718620000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qyy-2Z-iiR" userLabel="passwordLabel">
+                                <rect key="frame" x="99" y="435" width="250" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.72835386020000004" blue="0.65860718620000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7pz-fh-Ux5" userLabel="ageLabel">
+                                <rect key="frame" x="99" y="515" width="250" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.72835386020000004" blue="0.65860718620000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="6" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CGn-2h-ZrW" userLabel="telLabel">
+                                <rect key="frame" x="99" y="595" width="250" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.72835386020000004" blue="0.65860718620000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="7" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aVY-QY-aop" userLabel="emailLabel">
+                                <rect key="frame" x="99" y="675" width="250" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.72835386020000004" blue="0.65860718620000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Dij-Lc-FMF">
+                                <rect key="frame" x="184" y="810" width="400" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="24"/>
+                                <state key="normal" backgroundImage="Button_Done.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonDone:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LXd-k5-L1p"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="login" textAlignment="center" minimumFontSize="19" background="textField3-login.png" clearButtonMode="whileEditing" id="7G3-CI-aK8" userLabel="loginField">
+                                <rect key="frame" x="376" y="355" width="300" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="textFieldAction:" destination="BYZ-38-t0r" eventType="editingChanged" id="9tW-Cv-liu"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ky4-Fs-ihJ"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="center" minimumFontSize="19" background="textField1-login.png" clearButtonMode="whileEditing" id="cKW-Ea-iXn" userLabel="nameField">
+                                <rect key="frame" x="376" y="195" width="300" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="textFieldAction:" destination="BYZ-38-t0r" eventType="editingChanged" id="GoZ-c2-aS3"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ySv-ag-dJV"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="label.png" id="SmM-aN-Vgn" userLabel="label1">
+                                <rect key="frame" x="39" y="197" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="label.png" id="nng-4N-Efy" userLabel="label2">
+                                <rect key="frame" x="39" y="277" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="label.png" id="GHQ-op-h97" userLabel="label3">
+                                <rect key="frame" x="39" y="357" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="label.png" id="T01-uH-gZC" userLabel="label4">
+                                <rect key="frame" x="39" y="437" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="label.png" id="ZHj-cM-Ou2" userLabel="label5">
+                                <rect key="frame" x="39" y="517" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="label.png" id="N5C-Qg-hoA" userLabel="label6">
+                                <rect key="frame" x="39" y="597" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="label.png" id="Jqq-Go-lOj" userLabel="label7">
+                                <rect key="frame" x="39" y="677" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="ageField" destination="aJ6-ih-Mx0" id="Ivj-xd-rek"/>
+                        <outlet property="ageLabel" destination="7pz-fh-Ux5" id="sKt-JI-9qX"/>
+                        <outlet property="emailField" destination="KE3-OE-j7h" id="LRn-18-Rns"/>
+                        <outlet property="emailLabel" destination="aVY-QY-aop" id="1gQ-EI-NeZ"/>
+                        <outlet property="lastNameField" destination="We0-wj-MWf" id="mdX-ZD-9Nv"/>
+                        <outlet property="lastNameLabel" destination="61K-5Q-FZs" id="M2G-Ga-voJ"/>
+                        <outlet property="loginField" destination="7G3-CI-aK8" id="h4s-iB-PHo"/>
+                        <outlet property="loginLabel" destination="8II-Gi-Jwx" id="Ljn-3D-R5d"/>
+                        <outlet property="nameField" destination="cKW-Ea-iXn" id="3Kd-Gw-LpF"/>
+                        <outlet property="nameLabel" destination="H6R-Wd-ppx" id="3Az-0s-hJv"/>
+                        <outlet property="passwordField" destination="fqd-ok-FYJ" id="Xed-w4-GSA"/>
+                        <outlet property="passwordLabel" destination="qyy-2Z-iiR" id="ADv-20-uzq"/>
+                        <outlet property="telField" destination="GWf-83-1e3" id="EKy-F1-uTc"/>
+                        <outlet property="telLabel" destination="CGn-2h-ZrW" id="E8f-Pp-Ya8"/>
+                        <outletCollection property="labelCollection" destination="H6R-Wd-ppx" id="BC0-FO-86x"/>
+                        <outletCollection property="labelCollection" destination="61K-5Q-FZs" id="iIr-JU-wzt"/>
+                        <outletCollection property="labelCollection" destination="8II-Gi-Jwx" id="ier-HD-TKn"/>
+                        <outletCollection property="labelCollection" destination="qyy-2Z-iiR" id="v79-rI-XOf"/>
+                        <outletCollection property="labelCollection" destination="7pz-fh-Ux5" id="joD-ct-kL0"/>
+                        <outletCollection property="labelCollection" destination="CGn-2h-ZrW" id="vxH-3s-0ee"/>
+                        <outletCollection property="labelCollection" destination="aVY-QY-aop" id="oV4-in-2Kk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="390" y="680"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Button_Done.png" width="400" height="55"/>
+        <image name="background.png" width="651" height="651"/>
+        <image name="label.png" width="28" height="28"/>
+        <image name="textField1-login.png" width="300" height="40"/>
+        <image name="textField2-lastName.png" width="300" height="40"/>
+        <image name="textField3-login.png" width="300" height="40"/>
+        <image name="textField4-password.png" width="300" height="40"/>
+        <image name="textField5-age.png" width="300" height="40"/>
+        <image name="textField6-tel.png" width="300" height="40"/>
+        <image name="textField7-email.png" width="300" height="40"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
